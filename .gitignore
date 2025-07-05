@@ -1,0 +1,21 @@
+# Ignore Git metadata and settings
+.git/
+.gitignore
+
+# Ignore GitHub Actions workflow files
+.github/
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore temporary or editor-specific files
+*.log
+*.swp
+*.swo
+*.tmp
+
+# Optional: Ignore deployment artifacts (if you ever add a build step)
+dist/
+build/
+out/
