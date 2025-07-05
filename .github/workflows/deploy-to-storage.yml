@@ -1,0 +1,23 @@
+name: Deploy to Azure Storage Static Website
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      - name: Upload to Azure Storage Static Website
+        uses: azure/cli@v1
+        with:
+          inlineScript: |
+            az storage blob upload-batch \
+              --account-name ${{ secrets.AZURE_STORAGE_ACCOUNT }} \
+              --destination \$web \
+              --source . \
+              --account-key ${{ secrets.AZURE_STORAGE_ACCOUNT_KEY }}
