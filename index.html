@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Guillaume Boisseau - CV</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="dark-mode">
+  <div class="theme-toggle-wrapper">
+    <button id="toggle-theme" class="button">
+      <i data-lucide="sun"></i> Toggle Theme
+    </button>
+  </div>
+  <main class="container">
+    <header class="header">
+      <h1>Guillaume Boisseau</h1>
+      <p class="subtitle">System Administrator | Azure Specialist | Cloud Enthusiast</p>
+      <div class="button-row">
+        <a href="mailto:contact@example.com" class="button">
+          <i data-lucide="mail"></i> contact@example.com
+        </a>
+        <a href="#" class="button">
+          <i data-lucide="linkedin"></i> LinkedIn
+        </a>
+        <a href="#" class="button">
+          <i data-lucide="github"></i> GitHub
+        </a>
+        <a href="#" download class="button dark">
+          <i data-lucide="download"></i> Download CV
+        </a>
+      </div>
+    </header>
+
+    <section class="card">
+      <h2>Professional Summary</h2>
+      <p>
+        System Administrator specialized in Microsoft Azure with strong experience in cloud infrastructure, virtualization, and automation. Dynamic, autonomous, and known for excellent customer service and adaptability.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Experience</h2>
+      <div class="job">
+        <h3>Cloud Systems Administrator – Example Corp</h3>
+        <p class="date">Jan 2022 – Present</p>
+        <ul>
+          <li>Managed hybrid Azure environments and implemented security best practices.</li>
+          <li>Automated infrastructure provisioning using PowerShell and ARM templates.</li>
+          <li>Collaborated with developers to streamline CI/CD pipelines on Azure DevOps.</li>
+        </ul>
+      </div>
+      <div class="job">
+        <h3>IT Administrator – Tech Solutions</h3>
+        <p class="date">Aug 2019 – Dec 2021</p>
+        <ul>
+          <li>Maintained virtual environments using Hyper-V and VMware.</li>
+          <li>Deployed group policies and managed on-prem AD infrastructure.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Skills</h2>
+      <ul class="skills">
+        <li>Azure</li>
+        <li>PowerShell</li>
+        <li>Virtualization</li>
+        <li>CI/CD</li>
+        <li>Terraform</li>
+        <li>Windows Server</li>
+        <li>Linux</li>
+        <li>Active Directory</li>
+        <li>Automation</li>
+      </ul>
+    </section>
+
+    <footer class="footer">
+      © <script>document.write(new Date().getFullYear())</script> Guillaume Boisseau. All rights reserved.
+    </footer>
+  </main>
+
+  <script>
+    lucide.createIcons();
+
+    const toggleBtn = document.getElementById('toggle-theme');
+    const body = document.body;
+
+    toggleBtn.addEventListener('click', () => {
+      body.classList.toggle('light-mode');
+      body.classList.toggle('dark-mode');
+      toggleBtn.innerHTML = body.classList.contains('light-mode')
+        ? '<i data-lucide="moon"></i> Toggle Theme'
+        : '<i data-lucide="sun"></i> Toggle Theme';
+      lucide.createIcons();
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,149 @@
+/* styles.css */
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #18181b; /* zinc-900 */
+  color: #e4e4e7; /* zinc-100 */
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  margin: 0.5rem 0;
+}
+
+.subtitle {
+  color: #a1a1aa; /* zinc-400 */
+  margin-bottom: 1.5rem;
+}
+
+.button-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid #3f3f46; /* zinc-700 */
+  border-radius: 8px;
+  color: #e4e4e7;
+  text-decoration: none;
+  background-color: transparent;
+  transition: background-color 0.2s;
+}
+
+.button:hover {
+  background-color: #27272a; /* zinc-800 */
+}
+
+.button.dark {
+  background-color: #27272a;
+  border-color: transparent;
+}
+
+.button.dark:hover {
+  background-color: #3f3f46;
+}
+
+.card {
+  background-color: #27272a;
+  border: 1px solid #3f3f46;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.card p,
+.card ul {
+  color: #d4d4d8; /* zinc-300 */
+}
+
+.job h3 {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+}
+
+.date {
+  color: #a1a1aa;
+  margin-bottom: 0.5rem;
+}
+
+.skills {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 0.5rem;
+  list-style-type: disc;
+  padding-left: 1.25rem;
+}
+
+.footer {
+  text-align: center;
+  color: #71717a; /* zinc-500 */
+  font-size: 0.875rem;
+  margin-top: 3rem;
+}
+
+/* Dark mode (default) */
+.dark-mode {
+  background-color: #18181b;
+  color: #e4e4e7;
+}
+
+/* Light mode */
+.light-mode {
+  background-color: #f9fafb;
+  color: #18181b;
+}
+
+.light-mode .card {
+  background-color: #ffffff;
+  border-color: #d1d5db;
+}
+
+.light-mode .button {
+  border-color: #d1d5db;
+  color: #18181b;
+  background-color: #f3f4f6;
+}
+
+.light-mode .button:hover {
+  background-color: #e5e7eb;
+}
+
+.light-mode .button.dark {
+  background-color: #d1d5db;
+}
+
+.light-mode .subtitle,
+.light-mode .date,
+.light-mode .footer {
+  color: #4b5563;
+}
+
+.theme-toggle-wrapper {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+    }
