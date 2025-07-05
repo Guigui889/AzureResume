@@ -21,3 +21,4 @@ jobs:
               --destination \$web \
               --source \website \
               --account-key ${{ secrets.AZURE_STORAGE_ACCOUNT_KEY }}
+              --overwrite
