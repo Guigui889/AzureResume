@@ -6,6 +6,7 @@ body {
   background-color: #18181b; /* zinc-900 */
   color: #e4e4e7; /* zinc-100 */
   line-height: 1.6;
+  text-align: center;
 }
 
 .container {
@@ -131,7 +132,6 @@ body {
 .light-mode .button:hover {
   background-color: #e5e7eb;
 }
-
 .light-mode .button.dark {
   background-color: #d1d5db;
 }
@@ -140,12 +140,6 @@ body {
 .light-mode .date,
 .light-mode .footer {
   color: #4b5563;
-}
-
-.theme-toggle-wrapper {
-      position: absolute;
-      top: 1rem;
-      right: 1rem;
 }
 
 .theme-toggle-wrapper {
