@@ -3,7 +3,7 @@ name: Azure Static Web Apps CI/CD
 on:
   push:
     branches:
-      - main  # or your chosen branch
+      - main  # or your actual deployment branch
 
 jobs:
   build-and-deploy:
@@ -11,10 +11,12 @@ jobs:
     name: Build and Deploy Job
     steps:
       - uses: actions/checkout@v3
+
       - name: Deploy to Azure Static Web App
         uses: Azure/static-web-apps-deploy@v1
         with:
+          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN }}
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
           action: "upload"
           app_location: "/"
           output_location: ""
-          repo_token: ${{ secrets.GITHUB_TOKEN }}
