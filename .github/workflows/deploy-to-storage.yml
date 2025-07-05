@@ -21,4 +21,5 @@ jobs:
               --destination \$web \
               --source \website \
               --account-key ${{ secrets.AZURE_STORAGE_ACCOUNT_KEY }} \
-              --overwrite
+              --overwrite \
+              --content-cache-control "no-cache"
