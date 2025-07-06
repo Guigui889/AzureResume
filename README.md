@@ -36,6 +36,9 @@ I also went ahead and manually implemented CI/CD on a Storage Account Hosted sta
 You can view the Static Web App version at:  
 👉 [guillaumeba.ca](https://guillaumeba.ca)
 
+You can view the Storage Account version at:  
+👉 [cv.guillaumeba.ca](https://cv.guillaumeba.ca)
+
 ---
 
 ## 🔬 Preview Environment (CI/CD)
