@@ -2,7 +2,7 @@
 # 📄 Personal Resume Website – Guillaume Boisseau-Allaire
 
 > ⚠️ **Disclaimer:** I am not a front-end developer by trade. This website was created in part using ChatGPT to assist with the design and structure.  
-> Although I do understand HTML/CSS and the frontend stack, The primary purpose of this project is to showcase my **Azure**, **CI/CD**, and **cloud infrastructure** skills through a real-world implementation.
+> Although I do understand HTML/CSS and the frontend stack enough to edit the provided HTML/CSS/Javascript, The primary purpose of this project is to showcase my **Azure**, **CI/CD**, and **cloud infrastructure** skills through a real-world implementation.
 
 ---
 
