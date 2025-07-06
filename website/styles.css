@@ -81,11 +81,6 @@ body {
   margin-bottom: 1rem;
 }
 
-.card p,
-.card ul {
-  color: #d4d4d8; /* zinc-300 */
-}
-
 .job h3 {
   margin-top: 1rem;
   font-size: 1.2rem;
