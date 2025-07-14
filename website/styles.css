@@ -161,3 +161,19 @@ body {
 .job p.date {
       display: none;
 }
+
+.certifications {
+      margin-top: 3rem;
+    }
+    .certifications h2 {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+    .certifications ul {
+      list-style: none;
+      padding: 0;
+    }
+    .certifications li {
+      padding: 0.5rem 0;
+      font-size: 1.1rem;
+    }
